@@ -1,12 +1,14 @@
 # Intro to Congestion Control
 
 > http://squidarth.com/rc/programming/networking/2018/07/18/intro-congestion.html
+>
+> 介绍拥塞控制中的「慢开始和拥塞避免」算法：慢开始是刚指开始的拥塞窗口很小，从 1 开始，随着传输轮次的增加拥塞窗口呈指数增长，当拥塞窗口等于 ssthresh 时，变为线性增长，直到检测到拥塞（丢包），窗口变 1，ssthresh 变为拥塞时的一半。作者同样分析了这个算法的缺点。
 
 ## Extracts
 
-**It’s worth noting too that** the protocol that TCP works on top of, IP, operates by transmitting packets with a maximum size of 1500 bytes. So if a sender needs to send 100kb, they need to **chop up** that data into segments, send them over TCP, and receive acknowledgements for ==al==l of those segments.
+**It’s worth noting too that** the protocol that TCP works on top of, IP, operates by transmitting packets with a maximum size of 1500 bytes. So if a sender needs to send 100kb, they need to **chop up** that data into segments, send them over TCP, and receive acknowledgements for ==all== of those segments.
 
-**It’s also worth noting here that** senders do not know up front what the properties of the links that they are sending information on are. If you request the website “http://www.google.com”, for instance, the packets you send are probably going through many links before finally getting to Google’s servers, and the rate at which you can send information is fundamentally going to be ==clamped== by the slowest link on that route.
+**It’s also worth noting here that** senders do not know up front what the properties of the links that they are sending information on are. If you request the website “http://www.google.com”, for instance, the packets you send are probably going through many links before finally getting to Google’s servers, and the rate at which you can send information is fundamentally going to be ==clamped== by the slowest link on that route. （短板效应）
 
 ### Like Pipe
 
@@ -21,6 +23,8 @@ Fast Retransmit: The receiver sends back “duplicate acks”. In TCP, receivers
 ### Congestion Window
 
  If the ==congestion window== on a sender is set to `2`, that means that after the sender sends `2` segments, it must wait to get an acknowledgment from the receiver in order to send any more. The congestion window is often referred to as the “flight size”, because it also corresponds to the number of segments “in flight” at any given point in time.
+
+（发送窗口 = min { 接收窗口， 拥塞窗口}，假设接收方有足够大缓存空间及接收窗口足够大，则发送窗口 == 拥塞窗口）
 
 ### Issues
 
