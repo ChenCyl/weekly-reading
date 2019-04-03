@@ -1,6 +1,6 @@
 # Intro to Congestion Control
 
-> http://squidarth.com/rc/programming/networking/2018/07/18/intro-congestion.html
+> 原文：http://squidarth.com/rc/programming/networking/2018/07/18/intro-congestion.html
 >
 > 介绍拥塞控制中的「慢开始和拥塞避免」算法：慢开始是刚指开始的拥塞窗口很小，从 1 开始，随着传输轮次的增加拥塞窗口呈指数增长，当拥塞窗口等于 ssthresh 时，变为线性增长，直到检测到拥塞（丢包），窗口变 1，ssthresh 变为拥塞时的一半。作者同样分析了这个算法的缺点。
 

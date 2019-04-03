@@ -1,6 +1,6 @@
 # All About Floats
 
-> <https://css-tricks.com/all-about-floats/>
+> 原文：<https://css-tricks.com/all-about-floats/>
 >
 > 作者将文章分为了四个部分：什么是 Float，Float 的用途， Float 产生的问题，如何清除 Float。第一部分里做将 web layout 里的 float 与 print layout 里的 text  wrap 做类比；第二部分介绍了 float 的主要用途是构建整个 web 页面的布局（同时也提到了现在比较常用也更强大的布局方法 Flaxbox 和 Grid）；第三部分介绍了 Float 产生的问题，其中最主要的是 Collapse；第四部分介绍了常用的 4 种清除 float 的方法。
 
