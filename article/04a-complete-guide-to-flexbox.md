@@ -85,3 +85,9 @@ eg2: [Codepen](<https://css-tricks.com/snippets/css/a-guide-to-flexbox/>)
 }
 ```
 
+---
+
+About `flex-basic` , this is what I don't understand.
+
+![image-20190404185821800](assets/image-20190404185821800.png)
+
