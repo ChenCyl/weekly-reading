@@ -6,6 +6,6 @@
 | [All About Floats](article/03all-about-floats.md)            | 介绍 CSS 中的 Float 属性                         | 2019-04-02 |
 | [A Complete Guide to Flexbox](article/04a-complete-guide-to-flexbox.md) | 介绍 CSS 中的 Flexbox 布局                       | 2019-04-04 |
 | [CREATING YOUR FIRST NPM PACKAGE](article/05creating-your-first-npm-package.md) | 介绍初次创建 npm package 的步骤                  | 2019-04-11 |
-| [刘慈欣克拉克想象力服务社会奖讲稿](article/06刘慈欣克拉克想象力服务社会奖讲稿.md) | "浩瀚的星空永远能够承载我们无穷的想象力。"       | 2019-04-12 |
+| [刘慈欣克拉克想象力服务社会奖讲稿](article/06刘慈欣克拉克想象力服务社会奖讲稿.md) | 「浩瀚的星空永远能够承载我们无穷的想象力。」     | 2019-04-12 |
 
 
